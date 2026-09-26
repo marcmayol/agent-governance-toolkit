@@ -36,7 +36,7 @@ owner: agt-maintainers
 [![NuGet](https://img.shields.io/nuget/v/Microsoft.AgentGovernance?label=NuGet)](https://www.nuget.org/packages/Microsoft.AgentGovernance)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/microsoft/agent-governance-toolkit/badge)](https://scorecard.dev/viewer/?uri=github.com/microsoft/agent-governance-toolkit)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/12085/badge)](https://www.bestpractices.dev/projects/12085)
-[![OWASP Agentic Top 10](https://img.shields.io/badge/OWASP_Agentic_Top_10-10%2F10_Covered-blue)](../compliance/owasp-agentic-top10-architecture.md)
+[![OWASP Agentic Top 10](https://img.shields.io/badge/OWASP_Agentic_Top_10-7_Full,_3_Partial-blue)](../compliance/owasp-agentic-top10-architecture.md)
 [![AARM Extended](https://img.shields.io/badge/AARM-Extended_(R1–R9)-brightgreen)](https://aarm.dev/builders/agent-governance-toolkit-microsoft)
 [![ATF](https://img.shields.io/badge/ATF-All_5_Elements-brightgreen)](https://agentictrustframework.ai/ecosystem)
 
@@ -365,7 +365,7 @@ Cada componente principal cuenta con una especificación formal según RFC 2119 
 | [Audit and Compliance](../specs/AUDIT-COMPLIANCE-1.0.md) | Auditoría Merkle, mapeo de cumplimiento, Decision BOM | 157 |
 | [AgentMesh Wire Protocol](../specs/AGENTMESH-WIRE-1.0.md) | Formato de mensaje, enrutado, serialización | — |
 
-**992 pruebas de conformidad** garantizan que el código siga alineado con las especificaciones. [29 registros de decisión de arquitectura](../adr/) documentan el porqué.
+**992 pruebas de conformidad** garantizan que el código siga alineado con las especificaciones. [29 registros de decisión de arquitectura](../adr/index.md) documentan el porqué.
 
 ---
 
@@ -375,7 +375,7 @@ Cada componente principal cuenta con una especificación formal según RFC 2119 
 |----------|-----------|
 | [OWASP Agentic AI Top 10](../compliance/owasp-agentic-top10-architecture.md) | Todas las categorías de riesgo ASI mapeadas con controles deterministas |
 | [NIST AI RMF 1.0](../compliance/nist-ai-rmf-alignment.md) | Alineación completa con GOVERN, MAP, MEASURE y MANAGE |
-| [Reglamento de IA de la UE](../compliance/) | Mapeo de cumplimiento con evidencias automatizadas |
+| [Reglamento de IA de la UE](../compliance/index.md) | Mapeo de cumplimiento con evidencias automatizadas |
 | [SOC 2](../compliance/soc2-mapping.md) | Mapeo de controles con exportación del rastro de auditoría |
 | [AARM Extended](https://aarm.dev/builders/agent-governance-toolkit-microsoft) | Todos los requisitos R1–R9 satisfechos; verificado el 14 de junio de 2026 |
 | [ATF](https://agentictrustframework.ai/ecosystem) | Los cinco elementos mapeados: Agent Mesh (identidad), Agent OS (política), Agent Compliance (gobernanza), Agent Runtime (sandboxing), Agent SRE (respuesta a incidentes) |
@@ -404,11 +404,11 @@ Consulta [Limitaciones conocidas](../LIMITATIONS.md) para conocer los límites d
 
 | Categoría | Enlaces |
 |-----------|---------|
-| **Primeros pasos** | [Inicio rápido](./quickstart.es.md) · [Tutoriales](../tutorials/) (más de 60) · [Preguntas frecuentes](../FAQ.md) |
-| **Arquitectura** | [Diseño del sistema](../ARCHITECTURE.md) · [Modelo de amenazas](../security/threat-model.md) · [ADR](../adr/) (29) |
-| **Especificaciones** | [Todas las especificaciones](../specs/) (10 especificaciones formales, 992 pruebas de conformidad) |
+| **Primeros pasos** | [Inicio rápido](./quickstart.es.md) · [Tutoriales](../tutorials/index.md) (más de 60) · [Preguntas frecuentes](../FAQ.md) |
+| **Arquitectura** | [Diseño del sistema](../ARCHITECTURE.md) · [Modelo de amenazas](../security/threat-model.md) · [ADR](../adr/index.md) (29) |
+| **Especificaciones** | [Todas las especificaciones](https://github.com/microsoft/agent-governance-toolkit/tree/main/docs/specs) (10 especificaciones formales, 992 pruebas de conformidad) |
 | **Referencia de API** | [Agent OS](https://github.com/microsoft/agent-governance-toolkit/blob/main/agent-governance-python/agent-os/README.md) · [AgentMesh](https://github.com/microsoft/agent-governance-toolkit/blob/main/agent-governance-python/agent-mesh/README.md) · [Agent SRE](https://github.com/microsoft/agent-governance-toolkit/blob/main/agent-governance-python/agent-sre/README.md) |
-| **Cumplimiento** | [OWASP](../compliance/owasp-agentic-top10-architecture.md) · [Reglamento de IA de la UE](../compliance/) · [NIST AI RMF](../compliance/nist-ai-rmf-alignment.md) · [SOC 2](../compliance/soc2-mapping.md) · [AARM Extended](https://aarm.dev/builders/agent-governance-toolkit-microsoft) · [ATF](https://agentictrustframework.ai/ecosystem) |
+| **Cumplimiento** | [OWASP](../compliance/owasp-agentic-top10-architecture.md) · [Reglamento de IA de la UE](../compliance/index.md) · [NIST AI RMF](../compliance/nist-ai-rmf-alignment.md) · [SOC 2](../compliance/soc2-mapping.md) · [AARM Extended](https://aarm.dev/builders/agent-governance-toolkit-microsoft) · [ATF](https://agentictrustframework.ai/ecosystem) |
 | **Despliegue** | [Azure](../deployment/index.md) · [AWS](../deployment/index.md) · [GCP](../deployment/index.md) · [Docker Compose](../deployment/index.md) |
 | **Extensiones** | [VS Code](https://github.com/microsoft/agent-governance-toolkit/tree/main/agent-governance-typescript/agent-os-vscode) · [Integraciones de frameworks](https://github.com/microsoft/agent-governance-toolkit/tree/main/agent-governance-python/agentmesh-integrations) |
 
