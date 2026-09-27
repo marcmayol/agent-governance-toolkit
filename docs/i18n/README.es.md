@@ -21,7 +21,7 @@ owner: agt-maintainers
 
 <p align="center">
   <strong>
-    🚀 <a href="#inicio-rápido">Inicio rápido</a> ·
+    🚀 <a href="#inicio-rapido">Inicio rápido</a> ·
     📋 <a href="#especificaciones">Especificaciones</a> ·
     📦 <a href="https://pypi.org/project/agent-governance-toolkit/">PyPI</a> ·
     📝 <a href="https://github.com/microsoft/agent-governance-toolkit/blob/main/CHANGELOG.md">Registro de cambios</a>
@@ -62,6 +62,8 @@ La seguridad a nivel de prompt («por favor, sigue las reglas») no es una super
 AGT no intenta ganar esa batalla dentro del prompt. Cada llamada a una herramienta, cada envío de mensaje y cada delegación se intercepta en código de aplicación determinista *antes* de que la intención del modelo llegue al cable. Las acciones que el kernel de AGT deniega no son «improbables». Son **estructuralmente imposibles**. Esa es la diferencia entre pedirle a un agente que se comporte y hacer que sea incapaz de comportarse mal.
 
 ---
+
+<a id="inicio-rapido"></a>
 
 ## Inicio rápido
 
@@ -272,6 +274,7 @@ Todas las capas son opcionales. Empieza con `govern()` y añade capas a medida q
 | **TypeScript** | [`@microsoft/agent-governance-sdk`](https://github.com/microsoft/agent-governance-toolkit/tree/main/agent-governance-typescript) | `npm install @microsoft/agent-governance-sdk` |
 | **Copilot CLI** | [`@microsoft/agent-governance-copilot-cli`](https://github.com/microsoft/agent-governance-toolkit/tree/main/agent-governance-copilot-cli) | `npx @microsoft/agent-governance-copilot-cli install` |
 | **Claude Code** | [`@microsoft/agent-governance-claude-code`](https://github.com/microsoft/agent-governance-toolkit/tree/main/agent-governance-claude-code) | `claude --plugin-dir ./agent-governance-claude-code` |
+| **Codex CLI** | [`@microsoft/agent-governance-codex-cli`](https://github.com/microsoft/agent-governance-toolkit/tree/main/agent-governance-codex-cli) | `node agent-governance-codex-cli/bin/agt-codex.mjs install` |
 | **OpenCode** | [`@microsoft/agent-governance-opencode`](https://github.com/microsoft/agent-governance-toolkit/tree/main/agent-governance-opencode) | `npm install @microsoft/agent-governance-opencode` |
 | **.NET** | [`Microsoft.AgentGovernance`](https://www.nuget.org/packages/Microsoft.AgentGovernance) | `dotnet add package Microsoft.AgentGovernance` |
 | **.NET MCP** | `Microsoft.AgentGovernance.Extensions.ModelContextProtocol` | `dotnet add package Microsoft.AgentGovernance.Extensions.ModelContextProtocol` |
@@ -344,6 +347,7 @@ Lista completa: [Integraciones de frameworks](https://github.com/microsoft/agent
 | [maf-integration](https://github.com/microsoft/agent-governance-toolkit/tree/main/examples/maf-integration) | MAF | Integración con Microsoft Agent Framework |
 | [mcp-trust-verified-server](https://github.com/microsoft/agent-governance-toolkit/tree/main/examples/mcp-trust-verified-server) | MCP | Implementación de un servidor MCP con confianza verificada |
 | [governance-dashboard](https://github.com/microsoft/agent-governance-toolkit/tree/main/examples/demos/governance-dashboard) | Streamlit | Panel de visibilidad de la flota en tiempo real |
+| [k8s-agent-sandbox-governed](https://github.com/microsoft/agent-governance-toolkit/tree/main/examples/k8s-agent-sandbox-governed) | kubernetes-sigs/agent-sandbox | Política de comandos previa al envío sobre el aislamiento de ejecución nativo de Kubernetes |
 
 ---
 
@@ -444,7 +448,7 @@ Las únicas fuentes oficiales del Agent Governance Toolkit son:
 |---------|-----------|
 | **Código fuente** | [github.com/microsoft/agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit) |
 | **Documentación** | [microsoft.github.io/agent-governance-toolkit](https://microsoft.github.io/agent-governance-toolkit/) |
-| **Paquetes de Python** | [pypi.org/user/agentgovtoolkit](https://pypi.org/user/agentgovtoolkit/) |
+| **Paquetes de Python** | `https://pypi.org/user/agentgovtoolkit/` |
 | **Paquetes de npm** | `@microsoft/agent-governance-sdk` en [npmjs.com](https://www.npmjs.com/) |
 | **Paquetes de NuGet** | `Microsoft.AgentGovernance.*` en [nuget.org](https://www.nuget.org/) |
 | **Crates de Rust** | `agent-governance`, `agent-governance-mcp` en [crates.io](https://crates.io/) |
